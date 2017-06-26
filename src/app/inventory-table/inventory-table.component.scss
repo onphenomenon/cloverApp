@@ -1,0 +1,25 @@
+@import "~font-awesome/css/font-awesome.css";
+
+table {
+  border: 1px solid #eceeef;
+}
+.table-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+th {
+  color:#686868;
+  background-color: #E8E8EE;
+  margin: 0 5px;
+  border-right:  1px solid white;
+}
+i {
+  color:#686868;
+  text-align: center;
+}
+button {
+  float: right;
+}
+.fa-caret-down {
+  float: right;
+}

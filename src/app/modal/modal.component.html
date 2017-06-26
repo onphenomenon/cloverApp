@@ -1,0 +1,25 @@
+<div *ngIf="editType !== 'Delete';" class="modal-header">
+  <h4 class="modal-title">{{modalType}}</h4>
+</div>
+<div class="modal-body">
+  <form *ngIf="editType !== 'Delete';">
+    <div class="form-group row">
+      <div class="col-6">
+        <label for="recipient-name" class="form-control-label">Item Name</label>
+        <input name="itemName" type="text" class="form-control" [(ngModel)]="item.name">
+      </div>
+      <div class="col-6">
+        <label for="recipient-name" class="form-control-label">Quantity</label>
+        <input name="itemQuantity" type="number" class="form-control" [(ngModel)]="item.stockCount">
+      </div>
+    </div>
+  </form>
+  <div *ngIf="editType === 'Delete';">
+    <p>Are you sure you want to delete "{{item.name}}"?
+    </p>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-info" (click)="activeModal.close('Cancel');">Cancel</button>
+  <button type="button" class="btn btn-info" (click)="activeModal.close(item);">{{editType}}</button>
+</div>

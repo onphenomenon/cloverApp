@@ -1,0 +1,11 @@
+<!--The whole content below can be removed with the new code.-->
+
+<body>
+  <div class="container">
+    <div class="header clearfix">
+      <h2>Inventory App</h2>
+    </div>
+    <inventory-graph [inventoryItems]="inventoryData"></inventory-graph>
+    <inventory-table (delete)="deleteItem($event);"  (update)="updateItems($event);" (sort)="sortItems($event);"  [inventoryItems]="inventoryData"></inventory-table>
+  </div>
+</body>

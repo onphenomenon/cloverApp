@@ -1,0 +1,21 @@
+// @import "~bootstrap/dist/scss/bootstrap.min.scss";
+// @import 'node_modules/bootstrap/scss/bootstrap.scss';
+//@import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~font-awesome/scss/font-awesome.scss";
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
