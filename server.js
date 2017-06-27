@@ -3,7 +3,7 @@ let https = require('https');
 let path = require('path');
 
 let app = express()
-app.use(express.static('CLOVER-APP/dist'));
+app.use(express.static('dist'));
 
 app.use((request, response, next) => {  
   console.log(request.headers);
